@@ -22,7 +22,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Application.App</mainClass>
+                            <mainClass>Application.AppCLI</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
