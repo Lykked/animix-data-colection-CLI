@@ -126,7 +126,6 @@ public class Coleta {
 
                 //Inserindo dadosSystem.out.println(maquina.getIdMaquina() + " " + usoCpu + " " + usoMemoriaPorcentagem + " " + temp + " " + qtdProcessos + " " + qtdServicos + " " + data + " " + isCritico + " " + comentarios + " " + leitura + " " + escrita + " " + discoTotal + " " + hora);
                 try {
-                  System.out.println(maquina.getIdMaquina() + " " + usoCpu + " " + usoMemoriaPorcentagem + " " + temp + " " + qtdProcessos + " " + qtdServicos + " " + data + " " + isCritico + " " + comentarios + " " + leitura + " " + escrita + " " + discoTotal + " " + hora);
                     database.update("insert into dados2 values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                             maquina.getIdMaquina(), usoCpu, usoMemoriaPorcentagem, temp, qtdProcessos, qtdServicos, data, isCritico, comentarios, leitura, escrita, discoTotal, hora);
                     databaseLocal.update("insert into dados values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -134,7 +133,6 @@ public class Coleta {
 
                 } catch (Exception e) {
 
-                    System.out.println(maquina.getIdMaquina() + " " + usoCpu + " " + usoMemoriaPorcentagem + " " + temp + " " + qtdProcessos + " " + qtdServicos + " " + data + " " + isCritico + " " + comentarios + " " + leitura + " " + escrita + " " + discoTotal + " " + hora);
                     System.out.println(e);
                
                 }
