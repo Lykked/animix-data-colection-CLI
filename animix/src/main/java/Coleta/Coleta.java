@@ -134,8 +134,11 @@ System.out.println(maquina.getIdMaquina() + " " + usoCpu + " " + usoMemoriaPorce
                             null, maquina.getIdMaquina(), usoCpu, usoMemoriaPorcentagem, temp, qtdProcessos, qtdServicos, data, hora, isCritico, comentarios, leitura, escrita, discoTotal);
 
                 } catch (Exception e) {
+                                    System.out.println(maquina.getIdMaquina() + " " + usoCpu + " " + usoMemoriaPorcentagem + " " + temp + " " + qtdProcessos + " " + qtdServicos + " " + data + " " + isCritico + " " + comentarios + " " + leitura + " " + escrita + " " + discoTotal + " " + hora);
+
                     System.out.println("Erro ao inserir os dados");
                     System.out.println(e);
+               
                 }
 
                 if (maquina.getSituacao() == 1) {
